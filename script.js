@@ -23,4 +23,4 @@ var weekday = new Array(7);
         greet = 'Good Evening,  ';
 
     document.getElementById('lbl').innerHTML =
-        greet+= "Natasha " +`<div id="date"> It's ${date}</div>`;
+        greet+= "Natasha " +`<div id="date"> Today's date is ${date}</div>`;
