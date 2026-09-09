@@ -1,57 +1,16 @@
-<html> 
-<head>
-    <title>Greeting Message</title> 
-    <style>
-#lbl {
-    font-family: monospace;
-    font-size: xx-large;
-    color: #626262;
-    padding: 5px;
-    border: 1px solid #ececec;
-    text-align: center;
-    line-height: 1.5;
-    height:85%
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" href="./style.css" />
 
+    <title>Greeting Message</title>
+  </head>
 
-}
-#date{
-    font-size:large;
-}
-body{
-    background-color: aliceblue;
-}
-    </style>
-</head>
-<body>
+  <body>
     <div id="lbl"></div>
-</body>
-
-<script>
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
-
-    
-    var today = new Date();
-    var hrs = today.getHours();
-    var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + (today.getMonth()+1) + "/" +today.getDate() +'/'+today.getFullYear()  ;
-
-    var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning  ';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
-
-    document.getElementById('lbl').innerHTML =
-        greet+= "Natasha " +`<div id="date"> It's ${date}</div>`;
-</script> 
+  </body>
+  <script src="./script.js"></script>
 </html>
